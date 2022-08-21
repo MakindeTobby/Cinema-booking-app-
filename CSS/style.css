@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.904);
+    background-image: url(../Media/main-bg\ \(2\).jpg);
+    background-position: 100%;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: #0e001d !important;
+    top: 0;
+    position: sticky;
+    z-index: 5;
+}
+
+.nav-cont {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 0.8rem;
+    background-color: transparent !important;
+    border: none;
+    cursor: pointer;
+}
+
+.screen {
+    width: 100%;
+    height: 90vh;
+    /* background-position: center; */
+    background-image: url(../Media/seat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #0e001dbd;
+    padding: 5% 10%;
+}
+
+.button {
+    gap: 2rem;
+}
+
+.txt-cont {
+    padding-top: 2%;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-cont h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    color: transparent;
+    text-shadow: 0 0 1px white;
+    font-family: Rza, Rza-fallback !important;
+    line-height: 80px;
+}
+
+#iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+.btn-holder, .span-holder {
+    width: 400px;
+    display: flex;
+    gap: 20px;
+}
+
+.span-holder span {
+    font-family: Rza, Rza-fallback !important;
+    font-size: 40px;
+    color: white;
+}
+
+.btn-holder button {
+    width: 120px !important;
+}
+
+.color {
+    color: #04063c;
+    color: #2b42a6;
+    color: #04378f;
+    color: #08208e;
+    color: #b6e5fc;
+}
+
+.txt-cont p {
+    font-size: 1rem;
+}
+
+.featured, .news, .feat {
+    padding: 1.5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+
+.feat {
+    margin-top: -10rem;
+
+}
+
+
+.featured h5 {
+    color: #dc3545;
+}
+
+.featured h2, .featured .h-next {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.featured .h-next {
+    font-weight: 200;
+}
+
+.poster-cont {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+
+}
+
+.nowp-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.poster-cont:hover .overview {
+    transform: translatey(0);
+
+}
+
+.btnM-bg {
+    background-color: #8E35EF !important;
+    color: white;
+}
+
+.btnM-outline {
+    border: 1px solid #8E35EF !important;
+    color: white;
+}
+
+.btnM-outline:hover {
+    background-color: #8E35EF !important;
+    color: white;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.videos-cont {
+    /* overflow-x: scroll; */
+    /* justify-content: space-between; */
+    gap: 5%;
+    height: 50vh;
+    /* margin-top: -5rem; */
+}
+
+.videos-cont::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+    display: none;
+}
+
+.videos-cont::-webkit-scrollbar-track {
+    background: white;
+    width: 20px;
+    height: 5px;
+}
+
+.videos-cont::-webkit-scrollbar-thumb {
+    background-color: #070b16;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.text-control {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.title, .type {
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.type {
+    width: 200px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.upcoming-ac {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-body {
+    /* background-color: black !important; */
+    z-index: 1000;
+    /* color: white; */
+}
+
+/* .rate {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+} */
+#vid-content {
+    width: 100%;
+    height: 50vh;
+    background-color: #04378f !important;
+}
+
+hr {
+    background-color: white;
+    color: white;
+    height: 1rem;
+    width: 100%;
+}
+
+.sign-in {
+    width: 100px;
+}
+
+.upcoming {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+}
+
+.u-frame, .u-content {
+    width: 20rem;
+    height: 25rem;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.u-content {
+    width: 35rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.news, footer {
+    width: 100%;
+    height: 50vh;
+}
+
+.news strong {
+    font-size: 1.5rem;
+}
+
+.news {
+    background-image: url(../Media/Overlay\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #220146f3;
+    background-blend-mode: multiply;
+
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#form-container input {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    box-shadow: inset 2px 2px 4px 2px gainsboro;
+}
+
+#form-container label {
+    color: #222;
+    font-weight: bold;
+}
+
+#form-container select {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    box-shadow: inset 2px 2px 4px 2px gainsboro;
+}
+
+#form-container textarea {
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-shadow: inset 2px 2px 4px 2px gainsboro;
+}
+
+
+
+/* .news {
+    padding: 1% 7%;
+} */
+
+footer {
+    height: 35vh;
+    padding: 4% 10%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.imgF {
+    width: 5rem;
+}
+
+footer .content {
+    width: 14rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer strong {
+    margin-bottom: 2%;
+}

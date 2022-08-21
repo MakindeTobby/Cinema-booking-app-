@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../SQI-class/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/ticket.css">
+    <title>Ticket-page</title>
+</head>
+
+<body>
+    <div class="bg-overlay">
+        <nav class="navEl">
+            <div><img src="../Media/filmHouse lg.png" width="20%" alt=""></div>
+            <div><Span class="welcome">Welcome: <span class="firstname" id="user-name">User</span></div>
+            <div class="but-cont"><span id="noti-bar"></span><button class="nav-btn border-0"
+                    style="background-color: transparent;"><img src="../Media/cart-px.png" alt="" width="100%"
+                        style="border-radius: 50%;"></button>
+
+            </div>
+            <button class="btn btn-success text-white btn-sm" onclick="goCart()">
+                Proceed to checkout
+            </button>
+        </nav>
+
+        <main class="B-page pe-3 ps-3">
+            <div class="B-second">
+                <div class="seat-pgs d-flex justify-content-between text-white pe-4 ps-4">
+                    <h1>Movie selected</h1>
+                    <h2 id="title" class="text-warning"></h2>
+                    <small id="info">Category</small>
+                    <small id="studio">Studio</small>
+                    <small id="describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum commodi quos
+                        perspiciatis?
+                        Impedit exercitationem expedita explicabo dicta. Maiores, asperiores accusamus.</small>
+                </div>
+
+
+                <hr>
+                <div class="seat-pg d-flex justify-content-center g-2 text-white ps-4 pe-4">
+
+
+                    <!-- <div class="select-cont">
+                        <span>Date</span>
+                        <span class="selects">
+                            <select name="" id="date">
+
+                            </select>
+                        </span>
+                    </div>
+
+                    <div class="select-cont">
+                        <span>Show Time</span>
+                        <span class="selects">
+                            <select name="" id="time">
+
+                            </select>
+                        </span>
+                    </div> -->
+
+                    <span>
+                        <button class="av-key"></button>
+                        <small> Available
+                            Seat</small>
+                    </span>
+                    <span>
+                        <small><button style="background-color: red; " class="av-key"></button> Your
+                            Seat</small>
+                    </span>
+
+                </div>
+                <hr>
+
+                <div class="w-100">
+
+                </div>
+                <div class="B-seat">
+                    <div class="seat">
+                        <!-- <button></button><button></button><button></button><button class="bg-info"></button><button
+                        class="bg-info"></button><button class="bg-info"></button><button
+                        class="bg-info"></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button> -->
+                    </div>
+                    <div class="seat2">
+                        <!-- <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button> -->
+                    </div>
+                </div>
+
+                <div class="key text-white w-100">
+
+                </div>
+
+
+
+                <hr>
+
+                <div class="tkt-pg d-flex text-white ps-4 pe-4">
+
+
+                    <span><small class="text-warning">No of Ticket(s):</small>
+                        <strong><span class="tkt-no text-danger">No</span> ticket<span id="add-s"></span></strong>
+                    </span>
+
+                    <span>
+                        <small class="text-warning">Price: </small> <strong id="price"></strong>
+                    </span>
+
+                    <span>
+                        <button class=" btn btnM-bg" onclick="showRefresh()" id="ref-btn">Refreshment</button>
+                    </span>
+
+                </div>
+
+                <hr>
+                <div class="seat-pgs d-flex text-white pe-4 ps-4"><strong class="text-warning">SEAT SELECTED</strong>
+                    <small id="seat-select" class="text-white"></small>
+                </div>
+            </div>
+
+
+        </main>
+
+        <div class="refreshment">
+            <div class="d-sm-flex flex-wrap gap-2 ref-box w-100 h-auto justify-content-between">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../../../SQI-class/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../SCRIPT/ticket.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: url(../Media/main-bg\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.884);
+    background-blend-mode: multiply;
+}
+
+.navEl {
+    background-color: #0e001d;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 5rem;
+    padding: 0.2rem 3rem;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    align-items: center;
+}
+
+.btn0 {
+    background-color: #8E35EF;
+    border: none;
+    border-radius: 0.1rem;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+
+.btn1 {
+    background-color: rgba(255, 0, 0, 0.788);
+}
+
+.btn-cont {
+    padding-left: 4rem;
+}
+
+.first {
+    width: 100%;
+    height: auto;
+    padding: 2rem 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.first-content {
+    width: 34.375rem;
+    height: 25vh;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.content, .content1, .content2 {
+    width: 9.375rem;
+    height: 25vh;
+
+
+}
+
+.content {
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    width: 15.625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content1 div {
+    height: 10vh;
+}
+
+.content2 {
+    /* background-color: #0e001d !important; */
+    width: 9.375rem;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

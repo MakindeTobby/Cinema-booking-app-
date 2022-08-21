@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="../CSS/sign-up.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="form">
+            <div class="logo"><img src="../Media/filmHouse lg.png" alt="" width="20%"></div>
+            <div class="form-d2">
+                <form action="" class="form2">
+                    <div class="logo">
+                        <h2>Sign In</h2>
+                    </div>
+                    <input type="email" id="login-email" required placeholder="Email">
+
+                    <input type="password" id="login-password" required placeholder="Password">
+                    <button class="btn" onclick="loginUser(ev)">Proceed</button>
+                    <div class="logo"> <a class="btn0" onclick="forgotP()">Forgot Password</a></div>
+                    <div class="logo">
+                        <a href="../HTML/sign-up.html">Don't have an account? Join now</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-d3 hidden">
+                <form action="" class="form3">
+
+                    <div class="logo">
+                        <h2>Forget Password</h2>
+                    </div>
+                    <h3>To reset your account, enter the email address you registered with.</h3>
+                    <input type="email" id="input" placeholder="Enter your email" required>
+
+                    <button class="btn" type="submit"> SEND RESET LINK </button>
+                    <div class="logo"><span>Don't have an account?<a href="../HTML/sign-up.html"> Sign up now</a></span>
+                    </div>
+
+                </form>
+            </div>
+    </main>
+</body>
+<script src="../SCRIPT/sign-up.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>

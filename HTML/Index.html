@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../SQI-class/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Modified</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary ps-4 pe-4">
+        <a class="navbar-brand" href="./Index.html"><img src="../Media/filmHouse lg.png" width="20%" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">G</button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goTo(upcomings)">UPCOMING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goTo(booking)">BOOKINGS & RESERVATION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goTo(about)">CONTACT</a>
+                </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <button class="btn  sign-in text-white btnM-bg" onclick="signPage(event)">SIGN
+                    UP</button>
+
+            </form>
+        </div>
+    </nav>
+
+
+    <main class=" " id="home">
+
+        <div class="screen" id="hero">
+            <div class="txt-cont">
+                <h1 id="hero-title">Welcome to film Arena</h1>
+                <p class="overflow-hidden" id="hero-overview">Enjoy unlimited fun and total comfort watching
+                    movies at our cinemas with friends and loved ones🥳
+                </p>
+                <div class="d-flex button">
+
+                </div>
+            </div>
+            <div class="span-holder">
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="feat">
+            <h2 class="text-white">Now <span class="h-next">Showing</span></h2>
+            <div class="videos-cont d-flex g-2 overflow-auto">
+
+
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+
+
+        <hr id="upcomings">
+        <div class="featured">
+
+
+            <h2>Upcoming</h2>
+
+            <div class="upcoming">
+                <div class="u-frame"><img src="../Media/p-holder.jpg" alt="" class="nowp-img" id="up-img">
+                </div>
+                <div class="u-content">
+                    <span class="text-danger">Coming soon</span>
+                    <h2 id="up-title">The Snow Queen</h2>
+                    <p class="text-white" id="up-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam
+                        aut cumque
+                        natus
+                        aperiam delectus
+                        alias ratione cupiditate accusantium veritatis similique, sequi velit quae
+                        reprehenderit ipsa.
+                        Sequi
+                        magni velit distinctio a.</p>
+                    <!-- <button class="btn btnM-outline w-50 mt-4"></button> -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed btn rounded-2  btnM-bg  mt-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                    aria-controls="flush-collapseOne">
+                                    View all coming soon
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr id="booking">
+        <div class="w-100 h-100 ">
+            <div class="news">
+                <strong class="text-white">Bookings & Reservations Only</strong>
+
+                <div class="d-flex w-100 justify-content-between mt-5 flex-wrap">
+                    <div class="w-50 text-white">
+                        <span class="text -white">
+                            Have a private experience with your friends, family or even colleagues.
+                            Rent out one of our spaces for your birthdays , events and premieres.
+                        </span>
+                    </div>
+                    <div>
+                        <form action="" id="form" hidden>
+                            <div id="form-container">
+                                <input type="text" placeholder="Enter Name">
+                                <label for="Phone"></label><input type="tel" placeholder="Enter Phone Number"></label>
+                                <textarea name="message" id="" placeholder="Your Message here" cols="30"
+                                    rows="10"></textarea></label>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btnM-outline btn text-dark" type="button"
+                                        id="close-form">Close</button>
+                                    <button class="btnM-bg btn" type="button">Submit</button>
+
+
+                                </div>
+                            </div>
+
+                        </form>
+                        <button class="btn btn-danger" id="open-form">CONTACT US NOW</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <footer>
+
+            <div class="imgF"> <img src="../Media/filmHouse lg.png" alt="" width="100%"></div>
+
+
+            <div class="content">
+                <strong id="about">Contact</strong>
+                <small>Self help</small>
+                <small>Contact Us</small>
+                <small>Adverise with Us</small>
+
+            </div>
+            <div class="content">
+                <strong>Company</strong>
+                <small>About Us</small>
+                <small>Cinemas</small>
+                <small> Ticket Prices</small>
+                <small>Experiences</small>
+
+            </div>
+
+            <div class="content">
+                <strong>Legal</strong>
+                <small> Terms of Use</small>
+                <small>Privacy policy</small>
+
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
+<script src="../../../../SQI-class/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../SCRIPT/script.js"></script>
+<script src="../Database/Movies.js"></script>
