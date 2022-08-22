@@ -59,7 +59,18 @@ function displayData() {
     </div>
 
     `
-    })
+    }),
+        resfresh.map((data) => {
+            document.querySelector(".ref").innerHTML +=
+                `
+                <span class="conte"> <strong>
+                ${data.name}
+            </strong>
+            <small>
+                ₦ ${data.amount}
+            </small></span>
+        `
+        })
 };
 function printThis() {
     window.print()

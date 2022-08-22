@@ -269,7 +269,7 @@ select {
 hr {
     background-color: var(--third-color);
     color: var(--third-color);
-    height: 2rem;
+    /* height: 2rem; */
     width: 100%;
 }
 

@@ -50,7 +50,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    background-color: #0e001dbd;
+    background-color: #0e001de1;
     padding: 5% 10%;
 }
 
@@ -144,6 +144,12 @@ body {
     /* border: 1px solid red; */
 
 }
+
+.poster-cont:hover {
+    transform: translate3d(101px);
+    border: 4px solid orange;
+}
+
 
 .nowp-img {
     width: 100%;
@@ -254,13 +260,13 @@ body {
 #vid-content {
     width: 100%;
     height: 50vh;
-    background-color: #04378f !important;
+    /* background-color: #04378f !important; */
 }
 
 hr {
     background-color: white;
     color: white;
-    height: 1rem;
+    /* height: 1rem; */
     width: 100%;
 }
 

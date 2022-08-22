@@ -100,3 +100,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.ref {
+    background-color: white;
+    width: 15rem;
+    height: 25vh;
+    border-radius: 5px;
+    padding: 1rem;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.conte {
+    display: flex;
+    justify-content: space-between;
+}
