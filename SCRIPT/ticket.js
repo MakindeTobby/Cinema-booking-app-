@@ -17,31 +17,48 @@ for (let i = 1; i < 51; i++) {
         `<button class="bn-seat text-white" id="n-seat${i + 50}" onclick="chooseSeat(${i + 50})">${i + 50}</button>`
 }
 
+
 function chooseSeat(ev) {
-    seatNumber.push(ev)
-    priceArray.push(price)
+    if (seatNumber.indexOf(ev) < 0) {
+        seatNumber.push(ev)
+        document.getElementById(`n-seat${ev}`).style = "background-color: red; color:#fff;"
+        priceArray.push(price)
+        displayInfo()
+    }
+    else {
+        seatNumber.splice(seatNumber.indexOf(ev), 1)
+        document.getElementById(`n-seat${ev}`).style = "background-color: rgba(255, 255, 255, 0.247); color:#fff;"
+        priceArray.splice(seatNumber.indexOf(ev), 1)
+        displayInfo()
+    }
+    localStorage.setItem("seatNo", JSON.stringify(seatNumber));
+    localStorage.setItem("priceTicket", price)
+
+}
+function displayInfo() {
     seatSelected.innerHTML = ""
     seatNumber.map((data) => {
         seatSelected.innerHTML += `<small>Seat  ${data}</small> `
     })
-    ticketNumber.innerHTML = seatNumber.length
+
+    if (seatNumber.length < 1) {
+        ticketNumber.innerText = "No"
+    }
+    else {
+        ticketNumber.innerText = seatNumber.length
+    }
+    let totalPrice = priceArray.reduce((total, value) => {
+        return total + value;
+    }, 0)
+
+    priceTag.innerHTML = `₦ ${totalPrice}`
+    localStorage.setItem("ticketPrice", totalPrice);
+
     if (seatNumber.length <= 1) {
         addS.innerText = ""
     } else {
         addS.innerText = "s"
     }
-
-    let totalPrice = priceArray.reduce((total, value) => {
-        return total + value;
-    }, 0)
-    priceTag.innerHTML = `₦ ${totalPrice}`
-    document.getElementById(`n-seat${ev}`).style.backgroundColor = "red";
-    document.getElementById(`n-seat${ev}`).style.border = "none";
-    document.getElementById(`n-seat${ev}`).disabled = true;
-    console.log(seatNumber);
-    localStorage.setItem("seatNo", JSON.stringify(seatNumber));
-    localStorage.setItem("priceTicket", price)
-    localStorage.setItem("ticketPrice", totalPrice);
 }
 
 
@@ -99,7 +116,7 @@ function showRefresh() {
         </div>
         <h4 class="text-dark text-align-center ps-2">${product.name}</h4>
         <h5 class="text-danger ps-2">₦ ${product.amount}</h5>
-        <button class="btn btnM-bg rounded-0 " onclick="addToCart(${index})">Add to Cart</button>
+        <button class="btn btnM-bg rounded-0 " onclick="addToCart(${index})">Add to Cart</button> 
     </div>
     
         `
@@ -127,10 +144,10 @@ function addToCart(index) {
 }
 const videoData = JSON.parse(localStorage.getItem("videoData"))
 const userInfo = JSON.parse(localStorage.getItem("user_info"))
-let iframe = document.querySelector('#iframe')
-let params = new URLSearchParams(location.search);
-let id = params.get('k')
-let trailer_id = videoData[Number(id)].trailerID
+// let iframe = document.querySelector('#iframe')
+// let params = new URLSearchParams(location.search);
+// let id = params.get('k')
+// let trailer_id = videoData[Number(id)].trailerID
 
 
 window.addEventListener("load", displayVideo,)
@@ -141,9 +158,9 @@ function displayVideo() {
         document.getElementById('info').innerText = `Categories: ${item.categories}`
         document.getElementById('studio').innerText = `Studio: ${item.studio}`
         document.getElementById('describe').innerText = `Overview:  ${item.desc}`
-        document.getElementById('poster').src = item.Image;
-        iframe.setAttribute('src', `https://www.youtube.com/embed/${trailer_id}`)
-        console.log(trailer_id);
+        // document.getElementById('poster').src = item.Image;
+        // iframe.setAttribute('src', `https://www.youtube.com/embed/${trailer_id}`)
+        // console.log(trailer_id);
 
     })
 };

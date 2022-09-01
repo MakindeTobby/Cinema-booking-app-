@@ -182,6 +182,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .select {
@@ -301,7 +302,6 @@ option {
     height: auto;
     display: flex;
     gap: 5px;
-
     flex-direction: column;
     background-color: var(--third-color);
     border-radius: 10px 10px 0 0;
@@ -313,5 +313,4 @@ option {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }

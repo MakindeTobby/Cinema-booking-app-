@@ -57,7 +57,6 @@ function displayData() {
             <img src="${url}" alt="" width="90%" height="90%" class="img">
         </div>
     </div>
-
     `
     }),
         resfresh.map((data) => {
