@@ -20,6 +20,8 @@ const emailError = document.getElementById("email-error");
 const nameError = document.getElementById("name-error");
 const passError = document.getElementById("pass-error");
 const confirmError = document.getElementById("confirm-error");
+const loginEmail = document.getElementById("login-email");
+const loginPass = document.getElementById("login-password");
 
 let pattern = /^[^ ]+@[^ ]+\.[com]{3,3}$/;
 let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/
@@ -124,7 +126,7 @@ function sendInfo(event) {
         clearInput()
         console.log(userInfo);
         localStorage.setItem("user_info", JSON.stringify(userInfo))
-        location.replace("./ticket.html")
+        location.replace("ticket.html")
     }
 
 }
@@ -141,18 +143,16 @@ function clearInput() {
 let arr = []
 let user = JSON.parse(localStorage.getItem("user_info"))
 
-if (data != null) {
-    arr = data
+if (user != null) {
+    arr = user
 }
 
-const loginEmail = document.getElementById("login-email");
-const loginPass = document.getElementById("login-password");
-function loginUser(ev) {
-    ev.preventDefault()
+
+function loginUser() {
     if (loginEmail.value === "" || loginPass.value === "") {
         swal("Ooops!", "Pls complete the form", "info");
     }
     else {
-        location.replace("./ticket.html")
+        location.replace("ticket.html")
     }
 }

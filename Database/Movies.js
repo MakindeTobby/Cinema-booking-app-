@@ -348,99 +348,6 @@ let movieList =
 }
 
 
-// localStorage.setItem('Movies', JSON.stringify(movieObject))
-
-// let display = document.querySelector('.mother-div')
-
-// function displayMovie(element,i) {
-//   display.innerHTML +=
-//     `
-//       <div class="side-child">
-//           <img class="immage" src= ${element.Image}>
-//           <div class="spaan">${element.title}</div>
-//           <div class="spaann">Categories : ${element.categories}</div>
-//           <div class="spaann">Studio :${element.studio}</div>
-//           <div class="spaann">released_Date:${element["released_Date"]}</div>
-//           <a class="aa" href="displaypage.html?k=${i}"><button class="bb">Watch Trailer</button></a>
-//       </div>
-
-//   `
-// }
-
-
-// function upcoming() {
-//   display.innerHTML = " ";
-//   for (let index = 0; index < movieObject.Upcoming.length; index++) {
-//     let element = movieObject.Upcoming[index]
-//     displayMovie(element)
-//   }
-// }
-
-// function recent() {
-//   display.innerHTML = " ";
-//   for (let index = 0; index < movieObject.Recent.length; index++) {
-//     let element = movieObject.Recent[index]
-//     displayMovie(element)
-//   }
-// }
-
-// function popular() {
-//   display.innerHTML = " ";
-//   for (let index = 0; index < movieObject.Popular.length; index++) {
-//     let element = movieObject.Popular[index]
-//     displayMovie(element)
-//   }
-// }
-
-
-
-
-// let searchdiv = document.querySelector('.input-search')
-
-// let Upcomin = movieObject.Upcoming
-// let Popula = movieObject.Popular
-// let Recen = movieObject.Recent
-
-// let allMovies = Upcomin.concat(Recen, Popula)
-
-
-
-// function serch() {
-//   display.innerHTML = " ";
-
-//   let data = allMovies.filter(function (e) {
-//     return e.title.includes(`${searchdiv.value}`.toUpperCase())  ||  e.title.includes(`${searchdiv.value}`.toLowerCase())
-//   })
-
-//   for (let index = 0; index < data.length; index++) {
-//     const element = data[index];
-//     displayMovie(element,index)
-//   }
-// console.log(data);
-//   localStorage.setItem('movie_filter', JSON.stringify(data))
-
-
-// }
-
-
-
-
-// function displayMovie(element,i) {
-//   display.innerHTML +=
-//     `
-//       <div class="side-child">
-//           <img class="immage" src= ${element.Image}>
-//           <div class="spaan">${element.title}</div>
-//           <div class="text-img">${element.desc}</div>
-//           <div class="spaann">TrailerID: ${element.trailerID}</div>
-//           <div class="spaann">Categories : ${element.categories}</div>
-//           <div class="spaann">Studio :${element.studio}</div>
-//           <div class="spaann">released_Date:${element["released_Date"]}</div>
-//           <a class="aa" href="displaypage.html?k=${i}"><button class="bb">Watch Trailer</button></a>
-//       </div>
-
-//   `
-// }
 
 
 let ticketArr = []
@@ -520,6 +427,6 @@ function activateInfo(index) {
 function ticketPage(data) {
   ticketArr.push(movieList.Popular[data])
   localStorage.setItem("videoData", JSON.stringify(ticketArr));
-  location.href = "../HTML/sign-in.html"
+  location.href = "sign-in.html"
 }
 

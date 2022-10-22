@@ -158,9 +158,6 @@ function displayVideo() {
         document.getElementById('info').innerText = `Categories: ${item.categories}`
         document.getElementById('studio').innerText = `Studio: ${item.studio}`
         document.getElementById('describe').innerText = `Overview:  ${item.desc}`
-        // document.getElementById('poster').src = item.Image;
-        // iframe.setAttribute('src', `https://www.youtube.com/embed/${trailer_id}`)
-        // console.log(trailer_id);
 
     })
 };

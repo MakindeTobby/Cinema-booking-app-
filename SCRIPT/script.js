@@ -134,7 +134,7 @@ function goTo(ev) {
 }
 function signPage(event) {
     event.preventDefault();
-    location.href = "./sign-up.html"
+    location.href = "sign-up.html"
 }
 
 let closeForm = document.getElementById('close-form');
